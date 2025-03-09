@@ -1,3 +1,6 @@
+
+![MicroserviceDiagram](https://github.com/user-attachments/assets/9947524a-9561-4e5f-8815-e8b260842377)
+
 ## What is this repository all about?
 
 This repo demonstrates the orchestration of microservices using Clean Architecture, with a modern security approach via Duende Identity Server. It focuses on scalability, secure authentication, and authorization, providing a robust foundation for building scalable, maintainable systems.
