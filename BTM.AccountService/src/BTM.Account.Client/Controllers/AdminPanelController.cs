@@ -30,7 +30,7 @@ namespace BTM.Account.Client.Controllers
 
             var request = new HttpRequestMessage(
                 HttpMethod.Get,
-                "/api/AdminPanel/");
+                GlobalConstants.ApiConstants.AdminPanel);
 
             var response = await httpClient.SendAsync(
                 request, HttpCompletionOption.ResponseHeadersRead);
