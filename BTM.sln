@@ -26,6 +26,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTM.Account.Shared", "BTM.A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTM.Account.Infrastructure", "BTM.AccountService\src\BTM.Account.Infrastructure\BTM.Account.Infrastructure.csproj", "{6DC9F47B-6437-EA7F-35C6-723EFEF0C1EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTM.Account.Application", "BTM.AccountService\src\BTM.Account.Application\BTM.Account.Application.csproj", "{961CD8BB-43DC-4EFD-8F64-44257D42BDFA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -68,6 +70,10 @@ Global
 		{6DC9F47B-6437-EA7F-35C6-723EFEF0C1EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DC9F47B-6437-EA7F-35C6-723EFEF0C1EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DC9F47B-6437-EA7F-35C6-723EFEF0C1EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{961CD8BB-43DC-4EFD-8F64-44257D42BDFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{961CD8BB-43DC-4EFD-8F64-44257D42BDFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{961CD8BB-43DC-4EFD-8F64-44257D42BDFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{961CD8BB-43DC-4EFD-8F64-44257D42BDFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -84,6 +90,7 @@ Global
 		{7AC65C15-6CFA-4B3F-FFFB-AA0D8B621EDD} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{16CAD9A7-C9C0-C14C-0CF4-70FE635BA747} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{6DC9F47B-6437-EA7F-35C6-723EFEF0C1EF} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{961CD8BB-43DC-4EFD-8F64-44257D42BDFA} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B418570A-B794-4101-B270-BA22B49E2DEE}
