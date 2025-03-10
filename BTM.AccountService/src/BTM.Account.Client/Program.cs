@@ -21,15 +21,14 @@ public class Program
 
         JsonWebTokenHandler.DefaultInboundClaimTypeMap.Clear();
 
-        //AddAccessTokenManagement() and AddUserAccessTokenHandler() access token and refresh token management.
-        builder.Services.AddAccessTokenManagement();
-        // create an HttpClient used for accessing the API
-        builder.Services.AddHttpClient("APIClient", client =>
+        builder.Services.AddUserAccessTokenHttpClient("APIClient", configureClient: client =>
         {
             client.BaseAddress = new Uri(builder.Configuration["ApiBaseUrl"]);
             client.DefaultRequestHeaders.Clear();
             client.DefaultRequestHeaders.Add(HeaderNames.Accept, "application/json");
-        }).AddUserAccessTokenHandler();
+        });
+        //AddAccessTokenManagement() and AddUserAccessTokenHandler() access token and refresh token management.
+        builder.Services.AddOpenIdConnectAccessTokenManagement();
 
         builder.Services.AddHttpClient("IDPClient", client =>
         {
@@ -77,6 +76,8 @@ public class Program
             };
 
             options.SaveTokens = true;
+            // and refresh token
+            options.Scope.Add("offline_access");
         });
 
         //Authorization builder

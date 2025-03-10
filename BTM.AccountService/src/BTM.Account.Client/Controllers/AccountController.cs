@@ -1,12 +1,9 @@
-﻿using BTM.Account.Client.Constants;
-using BTM.Account.Shared.Common;
-using IdentityModel.Client;
+﻿using BTM.Account.Shared.Common;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 
 namespace BTM.Account.Client.Controllers
 {
